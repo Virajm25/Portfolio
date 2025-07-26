@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viraj Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="themeBtn">🌙</button>
+
+  <!-- Background -->
+  <div class="bg-circles"></div>
+  <div class="gradient-line"></div>
+
+  <!-- Header -->
+  <header>
+    <h1>Hi, I'm Viraj</h1>
+    <p>A <span class="typing"></span></p>
+    <a href="./assets/viraj_resume.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer">View Resume</a>
+
+  </header>
+
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p class="about-text">I’m a passionate web developer who loves crafting modern, interactive, and animated user experiences. My goal is to build fast, elegant, and user-friendly web apps that stand out.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card" data-title="Netflix Clone" data-desc="Developed a responsive clone of Netflix homepage using HTML, CSS, and JavaScript." data-live="https://virajm25.github.io/Netflix-Clone/" data-code="https://github.com/Virajm25/Netflix-Clone">
+        <h3>Netflix Clone</h3>
+        <p>Responsive Netflix UI.</p>
+      </div>
+      <div class="project-card" data-title="Portfolio Website" data-desc="Built a collection of browser-based mini games." data-live="https://virajm25.github.io/Mini-games-Collection/" data-code="https://github.com/Virajm25/Mini-games-Collection">
+        <h3>Mini Games Web App</h3>
+        <p>Responsive browser-based mini games with modern UI.</p>
+      </div>
+      <div class="project-card" data-title="Weather App" data-desc="Live weather app using OpenWeatherMap API." data-live="https://your-project-link-3.com" data-code="https://github.com/your-repo/weather-app">
+        <h3>Weather App</h3>
+        <p>Weather API integration with live data.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Firebase</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+    <h2>Contact</h2>
+    <div class="social-icons">
+    <!-- Gmail -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=virajm1714@gmail.com" target="_blank">
+        <i class="fa-solid fa-envelope"></i>
+        </a>
+
+    <!-- GitHub -->
+        <a href="https://github.com/Virajm25" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        </a>
+
+    <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/viraj-mehrotra" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+    </div>
+
+
+
+
+
+  <!-- Project Modal -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div class="modal-buttons">
+        <a id="liveBtn" target="_blank">🔗 View Live</a>
+        <a id="codeBtn" target="_blank">💻 See Code</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
